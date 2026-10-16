@@ -3,6 +3,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import healthHandler from './api/health.ts';
 import psiHandler from './api/psi.ts';
+import onemapHandler from './api/onemap.ts';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -15,6 +16,7 @@ app.use(express.json());
 // Serverless API routes
 app.all('/api/health', healthHandler);
 app.all('/api/psi', psiHandler);
+app.all('/api/onemap', onemapHandler);
 
 async function startServer() {
   const isProduction = process.env.NODE_ENV === 'production';
