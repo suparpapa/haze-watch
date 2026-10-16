@@ -1,0 +1,7 @@
+{
+  "name": "Singapore PSI Air Quality",
+  "description": "Clean, real-time Singapore Pollutant Standards Index (PSI) and PM2.5 monitor with interactive Singapore regional map, pollutant breakdown, and health advisories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
